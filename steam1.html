@@ -1,0 +1,17 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.8/aframe/build/aframe-ar.js"></script>
+  <body>
+    <a-scene embedded arjs>
+      <a-marker preset="hiro">
+          <a-dodecahedron color="#ffc7f3" scale="0.5 1 1" radius="1"></a-dodecahedron>
+        <a-torus color="#ff9cea" arc="360" radius="1" radius-tubular="0.15"></a-torus>
+        <a-torus-knot color="#ff5edd" arc="180" p="2" q="7" radius="3" radius-tubular="0.03"></a-torus-knot>
+<a-torus-knot color="#ff5edd" arc="180" p="2" q="7" radius="3" radius-tubular="0.03" rotation= "90 0 0"></a-torus-knot>
+  <a-text value="z e i g h" position="0 5 0" rotation="-90 0 0" size="200" color="#d402a8"></a-text>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
